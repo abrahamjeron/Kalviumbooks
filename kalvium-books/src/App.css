@@ -1,0 +1,101 @@
+.nav-bar{
+  background-color: #302841;
+}
+.nav-bar img{
+  position: relative;
+  top: 35px;
+  left: 20px;
+  height: 40px;
+}
+h1{
+  position: relative;
+  left: 63px;
+  bottom:19px;
+  color: #EF3837;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.link{
+  position: relative;
+  left: 1250px;
+  top: 10px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-decoration: none;
+}
+.search-bar{
+  position: relative;
+  left: 520px;
+  bottom: 110px;
+}
+.search-bar input{
+  border-radius: 21px;
+  background: #E5E9F0;
+  width: 430px;
+  height: 35px;
+  border: 0.5px black solid;
+}
+.book-card{
+  width: 230px;
+  height: 340px;
+  flex-shrink: 0;
+  margin: 60px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #FFF;
+  transition: all 0.5s;
+}
+.book-card:hover{
+  box-shadow: 0px 11px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.book-image{
+  width: 230px;
+  height: 250px ;
+  border-radius: 10px 10px 0px 0px ;
+}
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.texts{
+  position: relative;
+  bottom: 30px;
+  left: 5px;
+}
+.book-card h2{
+  position: relative;
+  top: 15px;
+  font-size: 1rem;
+}
+#rating{
+  position: relative;
+  bottom: 10px;
+}
+.close{
+  position: relative;
+  bottom: 890px;
+  font-size: 2.5rem;
+  left: 370px;
+  z-index: 1001;
+}
+.register{
+  position: relative;
+  left: 85%;
+  bottom: 70px;
+  z-index: 1001;
+  background: none;
+  border: none;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}

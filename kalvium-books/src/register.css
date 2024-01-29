@@ -1,0 +1,44 @@
+.sub-containers label{
+    font-size: 2rem;
+}
+.form-container{
+    position: absolute;
+    left: 350px;
+    top: 200px;
+    bottom: 200px;
+    background-color: #CDF6FF;
+    width: 700px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+form{
+    position: relative;
+    top: 50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+input{
+    width: 500px;
+    height: 25px;
+}
+.submit-btn{
+    width: 140px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: #302841;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    left: 160px;
+}
+
+h3{
+    position: relative;
+    left: 260px;
+    top: 20px;
+    font-family: Inter;
+    font-size: 1.2rem;
+}

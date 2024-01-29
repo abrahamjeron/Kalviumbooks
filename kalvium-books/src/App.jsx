@@ -1,13 +1,19 @@
+//Importing all the libraries from react
 import React, { useState, useEffect } from 'react';
 import  Registerpage  from "./registerpage";
+//Initialising the variables(APS documentations)
 const apiUrl = 'https://reactnd-books-api.udacity.com/books';
 const headers = { 'Authorization': 'whatever-you-want' };
 import "./App.css"
+
+//Main function
 function App() {
+  //Using hooks
   const [books, setBooks] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [visible, setVisible] = useState(false);
 
+  //For registration form visiblity
   const openForm = () => {
     setVisible(true);
   };
@@ -15,7 +21,7 @@ function App() {
   const closeForm = () => {
     setVisible(false);
   };
-
+//TO fetch books
   useEffect(() => {
     fetchBooks();
   }, []);
@@ -32,7 +38,7 @@ function App() {
         console.error('Error fetching books:', error);
       });
   };
-
+  //Handle search functions
   const handleSearch = () => {
     return books.filter(book => book.title.toLowerCase().includes(searchQuery.toLowerCase()));
   };
@@ -40,13 +46,11 @@ function App() {
   const handleInputChange = (event) => {
     setSearchQuery(event.target.value.trim());
   };
-// the dom contetnts
-
-
-
-
+  // the dom contetnts
   return (
+
     <div className="App">
+      {/* Header of the page */}
       <div className='nav-bar'>
         <img src="https://kalvium.com/wp-content/uploads/2022/07/fav.png" alt="" />
         <h1>Kalvium Books</h1>
@@ -67,7 +71,7 @@ function App() {
           placeholder="Search by title"
         />
       </div>
-
+      {/* book lists */}
       <div className="book-list">
         {handleSearch().map(book => (
           <div key={book.id} className="book-card">
@@ -83,7 +87,7 @@ function App() {
         ))}
       </div>
 
-      
+    {/* For the visiblity of registration form */}
       {visible && (
     <div className="modal">
       <div className="modal-content">
